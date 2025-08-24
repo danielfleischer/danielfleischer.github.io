@@ -1,0 +1,156 @@
+---
+---
+
+@misc{berchanskyCoTARChainofThoughtAttribution2024,
+  title = {{{CoTAR}}: {{Chain-of-Thought Attribution Reasoning}} with {{Multi-level Granularity}}},
+  shorttitle = {{{CoTAR}}},
+  author = {Berchansky, Moshe and Fleischer, Daniel and Wasserblat, Moshe and Izsak, Peter},
+  year = {2024},
+  month = nov,
+  number = {arXiv:2404.10513},
+  eprint = {2404.10513},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2404.10513},
+  urldate = {2025-06-29},
+  abstract = {State-of-the-art performance in QA tasks is currently achieved by systems employing Large Language Models (LLMs), however these models tend to hallucinate information in their responses. One approach focuses on enhancing the generation process by incorporating attribution from the given input to the output. However, the challenge of identifying appropriate attributions and verifying their accuracy against a source is a complex task that requires significant improvements in assessing such systems. We introduce an attribution-oriented Chain-of-Thought reasoning method to enhance the accuracy of attributions. This approach focuses the reasoning process on generating an attribution-centric output. Evaluations on two context-enhanced question-answering datasets using GPT-4 demonstrate improved accuracy and correctness of attributions. In addition, the combination of our method with finetuning enhances the response and attribution accuracy of two smaller LLMs, showing their potential to outperform GPT-4 in some cases.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Computation and Language,Computer Science - Machine Learning}
+}
+
+@misc{fleischerRAGFoundryFramework2024,
+  title = {{{RAG Foundry}}: {{A Framework}} for {{Enhancing LLMs}} for {{Retrieval Augmented Generation}}},
+  shorttitle = {{{RAG Foundry}}},
+  author = {Fleischer, Daniel and Berchansky, Moshe and Wasserblat, Moshe and Izsak, Peter},
+  year = {2024},
+  month = aug,
+  number = {arXiv:2408.02545},
+  eprint = {2408.02545},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2408.02545},
+  urldate = {2025-06-29},
+  abstract = {Implementing Retrieval-Augmented Generation (RAG) systems is inherently complex, requiring deep understanding of data, use cases, and intricate design decisions. Additionally, evaluating these systems presents significant challenges, necessitating assessment of both retrieval accuracy and generative quality through a multi-faceted approach. We introduce RAG Foundry, an open-source framework for augmenting large language models for RAG use cases. RAG Foundry integrates data creation, training, inference and evaluation into a single workflow, facilitating the creation of data-augmented datasets for training and evaluating large language models in RAG settings. This integration enables rapid prototyping and experimentation with various RAG techniques, allowing users to easily generate datasets and train RAG models using internal or specialized knowledge sources. We demonstrate the framework effectiveness by augmenting and fine-tuning Llama-3 and Phi-3 models with diverse RAG configurations, showcasing consistent improvements across three knowledge-intensive datasets. Code is released as open-source in https://github.com/IntelLabs/RAGFoundry.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Computation and Language,Computer Science - Information Retrieval,Computer Science - Machine Learning},
+  selected={true},
+  preview={ragfit.png}
+}
+
+@misc{fleischerSQuARESequentialQuestion2025,
+  title = {{{SQuARE}}: {{Sequential Question Answering Reasoning Engine}} for {{Enhanced Chain-of-Thought}} in {{Large Language Models}}},
+  shorttitle = {{{SQuARE}}},
+  author = {Fleischer, Daniel and Berchansky, Moshe and Markovits, Gad and Wasserblat, Moshe},
+  year = {2025},
+  month = feb,
+  number = {arXiv:2502.09390},
+  eprint = {2502.09390},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2502.09390},
+  urldate = {2025-06-29},
+  abstract = {In the rapidly evolving field of Natural Language Processing, Large Language Models (LLMs) are tasked with increasingly complex reasoning challenges. Traditional methods like chain-of-thought prompting have shown promise but often fall short in fully leveraging a model's reasoning capabilities. This paper introduces SQuARE (Sequential Question Answering Reasoning Engine), a novel prompting technique designed to improve reasoning through a self-interrogation paradigm. Building upon CoT frameworks, SQuARE prompts models to generate and resolve multiple auxiliary questions before tackling the main query, promoting a more thorough exploration of various aspects of a topic. Our expansive evaluations, conducted with Llama 3 and GPT-4o models across multiple question-answering datasets, demonstrate that SQuARE significantly surpasses traditional CoT prompts and existing rephrase-and-respond methods. By systematically decomposing queries, SQuARE advances LLM capabilities in reasoning tasks. The code is publicly available at https://github.com/IntelLabs/RAG-FiT/tree/square.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Computation and Language,Computer Science - Machine Learning},
+  selected={true},
+  preview={square.png}
+}
+
+@inproceedings{rozentalAmobeeIEST20182018,
+  title = {Amobee at {{IEST}} 2018: {{Transfer Learning}} from {{Language Models}}},
+  shorttitle = {Amobee at {{IEST}} 2018},
+  booktitle = {Proceedings of the 9th {{Workshop}} on {{Computational Approaches}} to {{Subjectivity}}, {{Sentiment}} and {{Social Media Analysis}}},
+  author = {Rozental, Alon and Fleischer, Daniel and Kelrich, Zohar},
+  year = {2018},
+  month = oct,
+  pages = {43--49},
+  publisher = {ACL},
+  address = {Brussels, Belgium},
+  doi = {10/gjs3q7},
+  urldate = {2021-11-27},
+  abstract = {This paper describes the system developed at Amobee for the WASSA 2018 implicit emotions shared task (IEST). The goal of this task was to predict the emotion expressed by missing words in tweets without an explicit mention of those words. We developed an ensemble system consisting of language models together with LSTM-based networks containing a CNN attention mechanism. Our approach represents a novel use of language models---specifically trained on a large Twitter dataset---to predict and classify emotions. Our system reached 1st place with a macro F1 score of 0.7145.}
+}
+
+@inproceedings{rozentalAmobeeSemEval2017Task2017,
+  title = {Amobee at {{SemEval-2017 Task}} 4: {{Deep Learning System}} for {{Sentiment Detection}} on {{Twitter}}},
+  shorttitle = {Amobee at {{SemEval-2017 Task}} 4},
+  booktitle = {Proceedings of the 11th {{International Workshop}} on {{Semantic Evaluation}} ({{SemEval-2017}})},
+  author = {Rozental, Alon and Fleischer, Daniel},
+  year = {2017},
+  month = aug,
+  pages = {653--658},
+  publisher = {ACL},
+  address = {Vancouver, Canada},
+  doi = {10/gksrzt},
+  urldate = {2021-11-27},
+  abstract = {This paper describes the Amobee sentiment analysis system, adapted to compete in SemEval 2017 task 4. The system consists of two parts: a supervised training of RNN models based on a Twitter sentiment treebank, and the use of feedforward NN, Naive Bayes and logistic regression classifiers to produce predictions for the different sub-tasks. The algorithm reached the 3rd place on the 5-label classification task (sub-task C).}
+}
+
+@inproceedings{rozentalAmobeeSemEval2018Task2018,
+  title = {Amobee at {{SemEval-2018 Task}} 1: {{GRU Neural Network}} with a {{CNN Attention Mechanism}} for {{Sentiment Classification}}},
+  shorttitle = {Amobee at {{SemEval-2018 Task}} 1},
+  booktitle = {Proceedings of {{The}} 12th {{International Workshop}} on {{Semantic Evaluation}}},
+  author = {Rozental, Alon and Fleischer, Daniel},
+  year = {2018},
+  month = jun,
+  pages = {218--225},
+  publisher = {ACL},
+  address = {New Orleans, Louisiana},
+  doi = {10/ggpb2f},
+  urldate = {2021-11-27},
+  abstract = {This paper describes the participation of Amobee in the shared sentiment analysis task at SemEval 2018. We participated in all the English sub-tasks and the Spanish valence tasks. Our system consists of three parts: training task-specific word embeddings, training a model consisting of gated-recurrent-units (GRU) with a convolution neural network (CNN) attention mechanism and training stacking-based ensembles for each of the sub-tasks. Our algorithm reached the 3rd and 1st places in the valence ordinal classification sub-tasks in English and Spanish, respectively.}
+}
+
+@article{rozentalLatentUniversalTaskSpecific2019,
+  title = {Latent {{Universal Task-Specific BERT}}},
+  author = {Rozental, Alon and Kelrich, Zohar and Fleischer, Daniel},
+  year = {2019},
+  month = may,
+  journal = {arXiv:1905.06638 [cs, stat]},
+  eprint = {1905.06638},
+  doi = {10.48550/arXiv.1905.06638},
+  primaryclass = {cs, stat},
+  urldate = {2021-11-27},
+  abstract = {This paper describes a language representation model which combines the Bidirectional Encoder Representations from Transformers (BERT) learning mechanism described in Devlin et al. (2018) with a generalization of the Universal Transformer model described in Dehghani et al. (2018). We further improve this model by adding a latent variable that represents the persona and topics of interests of the writer for each training example. We also describe a simple method to improve the usefulness of our language representation for solving problems in a specific domain at the expense of its ability to generalize to other fields. Finally, we release a pre-trained language representation model for social texts that was trained on 100 million tweets.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computation and Language,Computer Science - Machine Learning,Statistics - Machine Learning}
+}
+
+
+@misc{yenHELMETHowEvaluate2025,
+  title = {{{HELMET}}: {{How}} to {{Evaluate Long-Context Language Models Effectively}} and {{Thoroughly}}},
+  shorttitle = {{{HELMET}}},
+  author = {Yen, Howard and Gao, Tianyu and Hou, Minmin and Ding, Ke and Fleischer, Daniel and Izsak, Peter and Wasserblat, Moshe and Chen, Danqi},
+  year = {2025},
+  month = mar,
+  number = {arXiv:2410.02694},
+  eprint = {2410.02694},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2410.02694},
+  urldate = {2025-06-29},
+  abstract = {Many benchmarks exist for evaluating long-context language models (LCLMs), yet developers often rely on synthetic tasks such as needle-in-a-haystack (NIAH) or an arbitrary subset of tasks. However, it remains unclear whether these benchmarks reflect the diverse downstream applications of LCLMs, and such inconsistencies further complicate model comparison. We investigate the underlying reasons behind these practices and find that existing benchmarks often provide noisy signals due to limited coverage of applications, insufficient context lengths, unreliable metrics, and incompatibility with base models. In this work, we introduce HELMET (How to Evaluate Long-context Models Effectively and Thoroughly), a comprehensive benchmark encompassing seven diverse, application-centric categories. We also address several issues in previous benchmarks by adding controllable lengths up to 128K tokens, model-based evaluation for reliable metrics, and few-shot prompting for robustly evaluating base models. Consequently, we demonstrate that HELMET offers more reliable and consistent rankings of frontier LCLMs. Through a comprehensive study of 59 LCLMs, we find that (1) synthetic tasks like NIAH do not reliably predict downstream performance; (2) the diverse categories in HELMET exhibit distinct trends and low correlations with each other; and (3) while most LCLMs achieve perfect NIAH scores, open-source models significantly lag behind closed ones when tasks require full-context reasoning or following complex instructions -- the gap widens as length increases. Finally, we recommend using our RAG tasks for fast model development, as they are easy to run and better predict other downstream performance; ultimately, we advocate for a holistic evaluation across diverse tasks.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Computation and Language}
+}
+
+
+@article{aharonyIRDualitiesGeneral2015,
+  title = {{{IR Dualities}} in {{General}} 3d {{Supersymmetric SU}}({{N}}) {{QCD Theories}}},
+  author = {Aharony, Ofer and Fleischer, Daniel},
+  year = {2015},
+  month = feb,
+  journal = {Journal of High Energy Physics},
+  volume = {2015},
+  number = {2},
+  eprint = {1411.5475},
+  primaryclass = {hep-th},
+  pages = {162},
+  issn = {1029-8479},
+  doi = {10.1007/JHEP02(2015)162},
+  urldate = {2025-08-21},
+  abstract = {In the last twenty years, low-energy (IR) dualities have been found for many pairs of supersymmetric gauge theories with four supercharges, both in four space-time dimensions and in three space-time dimensions. In particular, duals have been found for 3d N=2 supersymmetric QCD theories with gauge group U(N), with F chiral multiplets in the fundamental representation, with F' chiral multiplets in the anti-fundamental representation, and with Chern-Simons level k, for all values of N, F, F' and k for which the theory preserves supersymmetry. For SU(N) theories the duals have been found in some cases, such as F=F' and F'=0, but not in the general case. In this note we find the IR dual for SU(N) SQCD theories with general values of N, F, F' and a non-zero k, which preserve supersymmetry.},
+  archiveprefix = {arXiv},
+  keywords = {High Energy Physics - Theory}
+}
+
