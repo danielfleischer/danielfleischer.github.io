@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Git Commit Lines Graph
-description: Python CLI tool for plotting project's line-count as a function of time, XKCD style. 
+description: Python CLI tool for plotting project's line-count as a function of time, XKCD style.
 img: assets/img/lines.png
 importance: 3
 category: fun

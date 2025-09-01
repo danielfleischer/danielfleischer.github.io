@@ -32,4 +32,3 @@ I'm an AI Research Engineer working to make artificial intelligence more capable
 My primary contributions include open-source tools for running AI workflows on Intel hardware and a framework that simplifies LLM fine-tuning for RAG applications. Currently developing agentic systems for enhanced reasoning and experimenting with GRPO training methods to advance AI capabilities.
 
 Always excited to collaborate with fellow researchers and engineers pushing the boundaries of what AI can accomplish.
-
