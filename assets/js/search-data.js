@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "post-jujutsu-impressions",
+        },{id: "post-breaking-language-barriers-in-mathematical-ai-introducing-hebrew-math-tutor",
+        
+          title: 'Breaking Language Barriers in Mathematical AI: Introducing Hebrew Math Tutor <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "A Blog post by Daniel Fleischer on Hugging Face",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://huggingface.co/blog/danf/hebrew-math-tutor", "_blank");
+          
+        },
+      },{id: "post-jujutsu-impressions",
         
           title: "Jujutsu Impressions",
         
@@ -63,11 +74,11 @@ ninja.data = [{
             window.open("https://haystack.deepset.ai/blog/hacker-news-summarization-opea", "_blank");
           
         },
-      },{id: "post-attention-required-cloudflare",
+      },{id: "post-המודל-שלכם-הוזה-כך-תבנו-בעצמכם-מערכת-rag-גיקטיים",
         
-          title: 'Attention Required! | Cloudflare <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+          title: 'המודל שלכם הוזה? כך תבנו בעצמכם מערכת RAG | גיקטיים <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         
-        description: "",
+        description: "מערכות RAG יכולות לפתור את תופעת ההזיות של LLMs, אבל כדי לבנות אחת טובה תצטרכו לקבל הרבה החלטות קריטיות (ולקוות שתגיעו הכי קרוב למושלם)",
         section: "Posts",
         handler: () => {
           
