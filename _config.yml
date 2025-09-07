@@ -120,6 +120,11 @@ disqus_shortname: al-folio # put your disqus shortname
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
 external_sources:
+  - name: Hugging Face Blog
+    posts:
+      - url: https://huggingface.co/blog/danf/hebrew-math-tutor
+        published_date: 2025-09-07
+
   - name: Medium Blog
     posts:
       - url: https://medium.com/@daniel.fleischer/open-domain-q-a-using-dense-retrievers-in-fastrag-65f60e7e9d1e
