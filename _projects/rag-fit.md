@@ -3,7 +3,7 @@ layout: page
 title: RAG-FiT
 description: Open-source framework that helps train large language models to perform better at retrieval-augmented generation workflows.
 img: assets/img/ragfit.png
-importance: 1
+importance: 2
 category: work
 github: https://github.com/IntelLabs/RAG-FiT
 ---

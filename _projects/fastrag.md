@@ -3,7 +3,7 @@ layout: page
 title: FastRAG
 description: A fast, scalable retrieval-augmented generation framework built on Haystack and HuggingFace, with Intel hardware optimizations.
 img: assets/img/fastrag-logo.png
-importance: 2
+importance: 1
 category: work
 github: https://github.com/IntelLabs/fastRAG
 ---
