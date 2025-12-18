@@ -32,7 +32,7 @@ ninja.data = [{
           },
         },{id: "post-deepmath-a-lightweight-math-reasoning-agent-with-smolagents",
         
-          title: 'DeepMath: A lightweight math reasoning Agent with SmolAgents <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+          title: 'DeepMath: A lightweight math reasoning Agent with smolagents <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         
         description: "We’re on a journey to advance and democratize artificial intelligence through open source and open science.",
         section: "Posts",
@@ -85,11 +85,11 @@ ninja.data = [{
             window.open("https://haystack.deepset.ai/blog/hacker-news-summarization-opea", "_blank");
           
         },
-      },{id: "post-attention-required-cloudflare",
+      },{id: "post-המודל-שלכם-הוזה-כך-תבנו-בעצמכם-מערכת-rag-גיקטיים",
         
-          title: 'Attention Required! | Cloudflare <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+          title: 'המודל שלכם הוזה? כך תבנו בעצמכם מערכת RAG | גיקטיים <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         
-        description: "",
+        description: "מערכות RAG יכולות לפתור את תופעת ההזיות של LLMs, אבל כדי לבנות אחת טובה תצטרכו לקבל הרבה החלטות קריטיות (ולקוות שתגיעו הכי קרוב למושלם)",
         section: "Posts",
         handler: () => {
           
@@ -118,7 +118,12 @@ ninja.data = [{
             window.open("https://medium.com/@daniel.fleischer/open-domain-q-a-using-dense-retrievers-in-fastrag-65f60e7e9d1e", "_blank");
           
         },
-      },{id: "projects-dictalm-2-0",
+      },{id: "projects-deepmath",
+          title: 'DeepMath',
+          description: "Simple framework for training and evaluating math reasoning agents using local models, GRPO and vLLM.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/deepmath/";
+            },},{id: "projects-dictalm-2-0",
           title: 'DictaLM 2.0',
           description: "Multi-node pretraining of a Hebrew LLM with distributed data and model parallelism.",
           section: "Projects",handler: () => {
