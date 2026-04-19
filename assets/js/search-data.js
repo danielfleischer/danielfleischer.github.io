@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "post-deepmath-a-lightweight-math-reasoning-agent-with-smolagents",
+        },{id: "post-hebrew-latex-in-org-mode",
+        
+          title: "Hebrew LaTeX in Org-mode",
+        
+        description: "A minimal setup for exporting Hebrew LaTeX documents from Org-mode.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/hebrew-latex-orgmode/";
+          
+        },
+      },{id: "post-deepmath-a-lightweight-math-reasoning-agent-with-smolagents",
         
           title: 'DeepMath: A lightweight math reasoning Agent with smolagents <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         
@@ -63,9 +74,9 @@ ninja.data = [{
             window.location.href = "/blog/2025/jj/";
           
         },
-      },{id: "post-built-an-mcp-server-for-llms-to-search-email-from-terminal-daniel-fleischer-posted-on-the-topic-linkedin",
+      },{id: "post-mcp-llm-emailsearch-opensource-ai-daniel-fleischer",
         
-          title: 'Built an MCP server for LLMs to search email from terminal | Daniel... <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+          title: '#mcp #llm #emailsearch #opensource #ai | Daniel Fleischer <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         
         description: "📬 I built an MCP server that lets LLMs search my email from the terminalThe server connects Claude to email search via the mu CLI tool. Now I just ask it things like: &quot;Find emails with PDF attachments from last April&quot; ⚡🛠 No custom frontend. No heavy framework. Just a CLI tool made smarter.💡 I learned that MCP servers are basically API translators — they take complex developer SDKs and flatten them into simple function calls that LLMs can actually use.🎯 The bigger picture: This pattern can breathe new life into existing CLI tools and services. Complex APIs → Simple, declarative functions → Natural language queries.This isn’t a product — just an experiment in stitching new capabilities into existing workflows. Code here: https://lnkd.in/eT2fJBSvmu email indexer and searcher: https://github.com/djcb/mu#MCP #LLM #EmailSearch #OpenSource #AIWhat existing tools would you want to make LLM-friendly? 🤔",
         section: "Posts",
@@ -96,11 +107,11 @@ ninja.data = [{
             window.open("https://www.geektime.co.il/diy-rag/", "_blank");
           
         },
-      },{id: "post-intel-labs-introduces-rag-fit-open-source-framework-for-retrieval-augmented-generation-in-llms-intel-community",
+      },{id: "post-error-the-request-could-not-be-satisfied",
         
-          title: 'Intel Labs Introduces RAG-FiT Open-Source Framework for Retrieval Augmented Generation in LLMs -... <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+          title: 'ERROR: The request could not be satisfied <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         
-        description: "Scott Bair is a key voice at Intel Labs , sharing insights into innovative research for inventing tomorrow’s technology. Intel Labs researchers",
+        description: "",
         section: "Posts",
         handler: () => {
           
