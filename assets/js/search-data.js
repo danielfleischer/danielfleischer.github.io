@@ -30,9 +30,9 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "post-hebrew-latex-in-org-mode",
+        },{id: "post-hebrew-latex-export-in-org-mode",
         
-          title: "Hebrew LaTeX in Org-mode",
+          title: "Hebrew LaTeX Export in Org-mode",
         
         description: "A minimal setup for exporting Hebrew LaTeX documents from Org-mode.",
         section: "Posts",
