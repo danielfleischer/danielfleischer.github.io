@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hebrew LaTeX in Org-mode
+title: Hebrew LaTeX Export in Org-mode
 date: 2026-04-19
 description: A minimal setup for exporting Hebrew LaTeX documents from Org-mode.
 tags: emacs latex hebrew
