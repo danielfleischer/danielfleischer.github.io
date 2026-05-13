@@ -74,9 +74,9 @@ ninja.data = [{
             window.location.href = "/blog/2025/jj/";
           
         },
-      },{id: "post-mcp-llm-emailsearch-opensource-ai-daniel-fleischer",
+      },{id: "post-built-an-mcp-server-for-llms-to-search-email-from-terminal-daniel-fleischer-posted-on-the-topic-linkedin",
         
-          title: '#mcp #llm #emailsearch #opensource #ai | Daniel Fleischer <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+          title: 'Built an MCP server for LLMs to search email from terminal | Daniel... <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         
         description: "📬 I built an MCP server that lets LLMs search my email from the terminalThe server connects Claude to email search via the mu CLI tool. Now I just ask it things like: &quot;Find emails with PDF attachments from last April&quot; ⚡🛠 No custom frontend. No heavy framework. Just a CLI tool made smarter.💡 I learned that MCP servers are basically API translators — they take complex developer SDKs and flatten them into simple function calls that LLMs can actually use.🎯 The bigger picture: This pattern can breathe new life into existing CLI tools and services. Complex APIs → Simple, declarative functions → Natural language queries.This isn’t a product — just an experiment in stitching new capabilities into existing workflows. Code here: https://lnkd.in/eT2fJBSvmu email indexer and searcher: https://github.com/djcb/mu#MCP #LLM #EmailSearch #OpenSource #AIWhat existing tools would you want to make LLM-friendly? 🤔",
         section: "Posts",
