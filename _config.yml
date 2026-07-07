@@ -122,6 +122,11 @@ disqus_shortname: al-folio # put your disqus shortname
 external_sources:
   - name: Hugging Face Blog
     posts:
+      - url: https://huggingface.co/blog/danf/intel-xpu-kernels-skill
+        published_date: 2026-06-17
+
+  - name: Hugging Face Blog
+    posts:
       - url: https://huggingface.co/blog/danf/hebrew-math-tutor
         published_date: 2025-09-07
 

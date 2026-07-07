@@ -56,6 +56,26 @@
   preview={square.png}
 }
 
+@online{spoczynskiXeForgeMultiStageLLMPowered2026,
+  title = {Xe-{{Forge}}: {{Multi-Stage LLM-Powered Kernel Optimization}} for {{Intel GPU}}},
+  shorttitle = {Xe-{{Forge}}},
+  author = {Spoczynski, Marcin and Fleischer, Daniel and Berchansky, Moshe and Stan, Gabriela Ben-Melech and Guskin, Shira and Xu, Weilin and Siemieniuk, Adam and Heinecke, Alexander},
+  date = {2026-04-16},
+  year = {2026},
+  month = April,
+  eprint = {2605.26118},
+  eprinttype = {arXiv},
+  eprintclass = {cs.DC},
+  doi = {10.48550/arXiv.2605.26118},
+  url = {http://arxiv.org/abs/2605.26118},
+  urldate = {2026-06-25},
+  abstract = {Porting deep learning algorithms to new hardware accelerators requires developers to repeatedly apply the same low-level optimizations -- quantization, memory access coalescing, tile size tuning, and architecture-specific workarounds -- to every Triton kernel in their code-base. This manual, repetitive effort is a major bottleneck: each kernel demands the same cycle of trial-and-error profiling against hardware constraints that vary across devices, yet the underlying optimization patterns remain largely consistent. We present Xe-Forge, a multi-stage LLM-powered pipeline that automates this process for Intel GPU. Given a functionally correct Triton kernel, the system applies up to nine optimization stages -- from algorithmic restructuring and operator fusion through block pointer modernization, GPU-specific tuning, and open-ended discovery -- each driven by a Chain-of-Verification-and-Refinement (CoVeR) agent that generates candidates, validates them on real hardware, and iterates on failures. A curated knowledge base encodes Intel GPU constraints (power-of-two warp counts, GRF modes, SLM sizing) that are absent from LLM training data, keeping the model within architecturally valid bounds. We evaluate Xe-Forge on 97 Level-2 KernelBench kernels and Flash Attention on the Intel Arc Pro B70, achieving a 1.17x geometric mean speedup over PyTorch eager with 67\% of kernels improving, nine kernels exceeding 5x (up to 82x), and 2--13.3x speedups on Flash Attention across all tested configurations without regression -- demonstrating that structured domain knowledge with hardware-in-the-loop verification can systematically eliminate the repetitive porting effort that currently gates algorithm deployment on new accelerators.},
+  pubstate = {prepublished},
+  selected={true},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Distributed Parallel and Cluster Computing},
+  preview={xe-forge.png}
+}
+
 @inproceedings{rozentalAmobeeIEST20182018,
   title = {Amobee at {{IEST}} 2018: {{Transfer Learning}} from {{Language Models}}},
   shorttitle = {Amobee at {{IEST}} 2018},
