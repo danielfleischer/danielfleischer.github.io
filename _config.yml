@@ -134,11 +134,16 @@ external_sources:
     posts:
       - url: https://medium.com/@daniel.fleischer/open-domain-q-a-using-dense-retrievers-in-fastrag-65f60e7e9d1e
         published_date: 2023-08-23
+        # title pinned because Medium serves CI a Cloudflare challenge page
+        title: "Open Domain Q&A using Dense Retrievers in fastRAG"
 
   - name: Intel News
     posts:
       - url: https://community.intel.com/t5/Blogs/Tech-Innovation/Artificial-Intelligence-AI/Intel-Labs-Introduces-RAG-FiT-Open-Source-Framework-for/post/1636347
         published_date: 2024-10-09
+        # title pinned because community.intel.com blocks CI fetches (Cloudflare)
+        # TODO: confirm exact title — inferred from the URL slug
+        title: "Intel Labs Introduces RAG-FiT Open-Source Framework for Retrieval Augmented Generation in LLMs"
 
   - name: Haystack Blog
     posts:

@@ -80,13 +80,46 @@ module ExternalPosts
       site.collections['posts'].docs << doc
     end
 
+    # Titles served by anti-bot interstitials (e.g. Cloudflare's "Just a
+    # moment...") when the build runs from a challenged IP such as a CI runner.
+    # These must never be baked into the site as post titles.
+    BLOCKED_TITLE_PATTERNS = [
+      /\Ajust a moment/i,
+      /attention required/i,
+      /access denied/i,
+      /are you a (human|robot)/i,
+      /enable javascript and cookies/i
+    ].freeze
+
     def fetch_from_urls(site, src)
       src['posts'].each do |post|
-        puts "...fetching #{post['url']}"
-        content = fetch_content_from_url(post['url'])
+        # A title/description set in _config.yml wins over anything fetched,
+        # keeping the build deterministic and independent of the runner's IP.
+        if post['title']
+          content = {
+            title: post['title'],
+            content: post['content'] || '',
+            summary: post['description']
+          }
+        else
+          puts "...fetching #{post['url']}"
+          content = fetch_content_from_url(post['url'])
+          if blocked_title?(content[:title])
+            puts "...WARNING: '#{content[:title]}' looks like an anti-bot page; " \
+                 "falling back to source name. Set 'title:' in _config.yml to fix."
+            content[:title] = src['name']
+            content[:content] = ''
+            content[:summary] = nil
+          end
+        end
         content[:published] = parse_published_date(post['published_date'])
         create_document(site, src['name'], post['url'], content, src)
       end
+    end
+
+    def blocked_title?(title)
+      title = title.to_s.strip
+      title.empty? || BLOCKED_TITLE_PATTERNS.any? { |re| title.match?(re) }
     end
 
     def parse_published_date(published_date)
@@ -101,10 +134,18 @@ module ExternalPosts
     end
 
     def fetch_content_from_url(url)
-      html = HTTParty.get(url).body
-      parsed_html = Nokogiri::HTML(html)
+      # Use a browser-like User-Agent; the HTTParty default is blocked or
+      # challenged by many hosts, which yields anti-bot interstitial pages.
+      response = HTTParty.get(url, {
+        headers: {
+          "User-Agent" => "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 " \
+                          "(KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+        },
+        follow_redirects: true
+      })
+      parsed_html = Nokogiri::HTML(response.body)
 
-      title = parsed_html.at('head title')&.text.strip || ''
+      title = parsed_html.at('head title')&.text&.strip || ''
       description = parsed_html.at('head meta[name="description"]')&.attr('content')
       description ||= parsed_html.at('head meta[name="og:description"]')&.attr('content')
       description ||= parsed_html.at('head meta[property="og:description"]')&.attr('content')
