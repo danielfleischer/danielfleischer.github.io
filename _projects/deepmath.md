@@ -20,4 +20,4 @@ Check out the code for the agent implementation and the TRL-vLLM agentic trainin
 
 Hugging Face Blog: <https://huggingface.co/blog/intel-deepmath> 
 
-Code: <https://github.com/IntelLabs/fastRAG>
+Code: <https://github.com/IntelLabs/DeepMath>
