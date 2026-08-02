@@ -2,7 +2,7 @@
 layout: page
 title: Xe-Forge
 description: A multi-stage, LLM-powered pipeline that automatically optimizes Triton GPU kernels for Intel GPUs.
-img: assets/img/xe-forge.png
+img: assets/img/xe-forge.jpg
 importance: -1
 category: work
 github: https://github.com/IntelLabs/Xe-Forge
