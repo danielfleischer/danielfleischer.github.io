@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: AI Research Engineer
+subtitle: AI Research Engineer at Intel — agentic systems, reinforcement learning, and open-source AI infrastructure.
 
 profile:
   align: right
@@ -20,10 +20,12 @@ latest_posts:
 
 
 
-<h5>Advancing AI reasoning through open-source tools and research</h5>
+<h5>Agentic systems, reinforcement learning, and open-source AI infrastructure</h5>
 
-I'm an AI Research Engineer working to make artificial intelligence more capable and accessible. I build open-source libraries that help developers integrate AI into their workflows, focusing on the intersection of research and practical implementation.
+I am an AI research engineer at Intel, working across the LLM stack: agentic systems, reinforcement learning for reasoning, retrieval-augmented generation, fine-tuning and inference optimization. My focus is the transition from research to production — systems that are not only demonstrated, but deployed and measured.
 
-My primary contributions include open-source tools for running AI workflows on Intel hardware and a framework that simplifies LLM fine-tuning for RAG applications. Currently developing agentic systems for enhanced reasoning and experimenting with GRPO training methods to advance AI capabilities.
+Much of this work is released as open source. [Xe-Forge](/projects/xe-forge/) is an agentic system that autonomously optimizes GPU compute kernels, combining a planner and tool-runner architecture with a curated knowledge base of Intel GPU expertise that is largely absent from model training data. [DeepMath](/projects/deepmath/) is a reinforcement-learning framework for training tool-using math agents with GRPO, where the model writes and executes Python within its own reasoning. [fastRAG](/projects/fastrag/) and [RAG-FiT](/projects/rag-fit/) address efficient retrieval-augmented generation and the fine-tuning of language models for RAG tasks, and [Dicta-LM 2.0](/projects/dictalm/) is an open Hebrew language model pretrained on Intel Gaudi accelerators.
 
-Always excited to collaborate with fellow researchers and engineers pushing the boundaries of what AI can accomplish.
+A consistent theme across these projects is measurement. Agentic systems are straightforward to demonstrate and difficult to trust, and my work therefore tends to include the evaluation harness and benchmarking infrastructure alongside the model itself.
+
+My background is in physics: an M.Sc. on dualities in supersymmetric field theories and doctoral research in astrophysics, both at the Weizmann Institute of Science. I am also a long-time Emacs user and a contributor to the GNU Emacs project and ecosystem.
