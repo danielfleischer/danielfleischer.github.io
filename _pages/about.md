@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: AI Research Engineer at Intel — agentic systems, reinforcement learning, and open-source AI infrastructure.
 
